@@ -1,0 +1,12 @@
+{
+  "name": "tiny-dovetail",
+  "version": "1.0.0",
+  "description": "Dovetail coding take home test",
+  "main": "index.js",
+  "author": "David Richard <david@dovetailapp.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "prettier": "1.18.2"
+  }
+}
