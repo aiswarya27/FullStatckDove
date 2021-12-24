@@ -4,6 +4,25 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
+// GraphQL query operation: LabelQuery
+// ====================================================
+
+export interface LabelQuery_labels {
+  readonly __typename: "Label";
+  readonly id: string;
+  readonly value: string;
+}
+
+export interface LabelQuery {
+  readonly labels: ReadonlyArray<LabelQuery_labels>;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
 // GraphQL mutation operation: NoteTitleMutation
 // ====================================================
 
@@ -21,6 +40,52 @@ export interface NoteTitleMutation {
 export interface NoteTitleMutationVariables {
   readonly id: string;
   readonly title: string;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL mutation operation: CreateLabelMutation
+// ====================================================
+
+export interface CreateLabelMutation_createLabel {
+  readonly __typename: "Label";
+  readonly value: string;
+}
+
+export interface CreateLabelMutation {
+  readonly createLabel: CreateLabelMutation_createLabel | null;
+}
+
+export interface CreateLabelMutationVariables {
+  readonly label: string;
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// @generated
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL mutation operation: UpdateNoteLabelMutation
+// ====================================================
+
+export interface UpdateNoteLabelMutation_updateNoteLabel {
+  readonly __typename: "Note";
+  readonly id: string;
+  readonly labels: string | null;
+}
+
+export interface UpdateNoteLabelMutation {
+  readonly updateNoteLabel: UpdateNoteLabelMutation_updateNoteLabel | null;
+}
+
+export interface UpdateNoteLabelMutationVariables {
+  readonly noteId: string;
+  readonly labels?: ReadonlyArray<string> | null;
 }
 
 /* tslint:disable */
@@ -62,6 +127,7 @@ export interface NoteQuery_note {
   readonly id: string;
   readonly title: string;
   readonly content: string;
+  readonly labels: string | null;
 }
 
 export interface NoteQuery {
